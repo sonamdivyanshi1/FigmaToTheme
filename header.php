@@ -1,22 +1,28 @@
-<?php
-wp_head();
-?>
+
 
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php wp_title(); ?></title>
-    <?php if (has_site_icon()) : ?>
-        <link rel="icon" href="<?php echo esc_url(get_site_icon_url('512')); ?>" sizes="512x512" />
-    <?php endif; ?>
-
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?> /assests/css/custom.css">
+    <script  src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
+    <title>html assignment</title>
 </head>
-
 <body>
-    <header>
-        
-    </header>
+    <div id="hero">
+        <nav>
+            <a class="logo" href="#">
+                <img src="<?php echo get_template_directory_uri(); ?>/assests/images/Logo.png" height="48" width="48">
+            </a>
+            <div class="menu-bar">
+              
+                <?php wp_nav_menu(array(
+                    'theme-location' => 'primary-menu',
+                    'menu_class' => 'nav-elements',
+                ))
+                ?>
+            </div>
+            
+            <button id="button-mobile">Start free trial</button>
+        </nav>
