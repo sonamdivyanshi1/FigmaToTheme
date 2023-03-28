@@ -15,8 +15,13 @@
             <a class="logo" href="#">
                 <img src="<?php echo get_template_directory_uri(); ?>/assests/images/Logo.png" height="48" width="48">
             </a>
+            <?php
+               // $logo_img=get_header_image();
+            ?>
             <div class="menu-bar">
-              
+                <a href="<?php echo site_url(); ?>">
+                    <!-- <img src="<?php echo $logo_img; ?>"> -->
+                </a>
                 <?php wp_nav_menu(array(
                     'theme-location' => 'primary-menu',
                     'menu_class' => 'nav-elements',
