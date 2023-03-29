@@ -29,7 +29,7 @@ body{
     top: 0.57%;
     bottom: 98.28%;
 }
-
+/*
 #nav-elements{
     display: flex;
     flex-direction: row;
@@ -40,16 +40,29 @@ body{
     position: absolute;
     width: 517px;
     height: 38px;
-    left: 683px;
+    /* left: 683px; 
     top: 19px;
 }
+*/
+nav{
+    height: 100px;
+}
 
-.nav-element {
-    margin: 0 0.8em;
+.nav-elements {
+    /* margin: 0 0.8em;
     width: auto;
     font-weight: 500;
     font-size: 14px;
-    line-height: 14px;
+    line-height: 14px; */
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50vw;
+}
+
+li{
+    list-style: none;
+    /* margin-left: 50vw; */
+    margin: 0px 30px;
 }
 
 #button-one{
@@ -59,6 +72,7 @@ body{
     border: 1px solid #191025;
     color:#722ED1;
     border-radius: 23px;
+    margin-left: 80vw;
 }
 
 a{
@@ -75,6 +89,7 @@ a{
     padding: 8px 2px;
     margin-top: 100px;
     height: 70vh;
+    margin-left: -70vw;
     /* left: 10%; */
 }
 
